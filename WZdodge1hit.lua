@@ -8,6 +8,7 @@ game.RunService.Heartbeat:Connect(function()
         local circle = workspace.RadialIndicator.Inner
         if circle.Size.y >= 165 then
             workspace.Mobs.BOSSFallenKing.Collider.CFrame = CFrame.new(workspace.MissionObjects.Spawn.Position)
+            game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").RootPart.CFrame = CFrame.new(workspace.MissionObjects.Spawn.Position)
         end
     end
 end)
